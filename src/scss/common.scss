@@ -1,0 +1,91 @@
+// Заголовки, общие БЄМ блоки и проче...
+.page {
+
+    // .page__promo
+
+    &__promo {}
+
+    // .page__events
+
+    &__events {}
+
+    // .page__saloons
+
+    &__saloons {}
+
+    // .page__articles
+
+    &__articles {}
+
+    // .page__social
+
+    &__social {}
+
+    // .page__mail
+
+    &__mail {}
+}
+
+.subtitle {
+    font-size: rem(21);
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+
+    &:not(:last-child) {
+        margin-bottom: rem(15);
+    }
+}
+
+.section-title {
+    font-family: 'Noto Serif';
+    font-weight: 700;
+    font-size: rem(30);
+    line-height: math.div(41, 30);
+    text-align: center;
+    color: #333333;
+
+    &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 60, 20, 1200, 320, 1);
+    }
+}
+
+//========================================================================================================================================================
+.button {
+    padding: rem(15) rem(35);
+    font-size: rem(18);
+    line-height: math.div(21, 18);
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease 0s;
+}
+
+.button-white {
+    background-color: #fff;
+    color: #333333;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #333333;
+            color: #fff;
+        }
+    }
+}
+
+.button-black {
+    background-color: #333333;
+    color: #fff;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: rgb(115, 113, 113);
+            color: #333333;
+        }
+    }
+}
+
+//========================================================================================================================================================
